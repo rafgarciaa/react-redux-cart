@@ -8,6 +8,7 @@
     "react-test-renderer": "^15.6.2"
   },
   "dependencies": {
+    "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
@@ -20,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "compile:sass": "node-sass assets/sass/main.scss assets/style.css -w"
   },
   "browserslist": [
     ">0.2%",
