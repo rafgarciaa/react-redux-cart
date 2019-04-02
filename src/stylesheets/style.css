@@ -39,6 +39,9 @@ body {
   box-sizing: border-box;
   padding: 8rem;
   background-color: #F5F5F5; }
+  @media (max-width: 37.5em) {
+    body {
+      padding: 5rem; } }
 
 body {
   font-family: "Chivo", sans-serif;
@@ -80,6 +83,10 @@ margins im working with
   border-radius: 10rem;
   color: #FFF;
   background-color: #5E97D1; }
+  @media (max-width: 37.5em) {
+    .btn {
+      font-size: 1.2rem;
+      padding: 0.7rem 1.5rem; } }
   .btn:hover {
     background-color: #407FC0;
     cursor: pointer; }
@@ -98,9 +105,17 @@ margins im working with
     @media (max-width: 56.25em) {
       .product:not(:last-child) {
         margin-bottom: 2.6rem; } }
+  @media (max-width: 37.5em) {
+    .product {
+      display: block; } }
   .product__left {
     display: table-cell;
     width: 33.33333333%; }
+    @media (max-width: 37.5em) {
+      .product__left {
+        display: block;
+        width: 100%;
+        height: 28vh; } }
     .product__left-1 {
       background: url("./img/chronograph.png");
       background-size: cover;
@@ -123,25 +138,37 @@ margins im working with
     @media (max-width: 56.25em) {
       .product__right {
         padding: 2.7rem 3.8rem 2.8rem 3.7rem; } }
+    @media (max-width: 37.5em) {
+      .product__right {
+        display: block;
+        width: 100%;
+        padding: 1rem 2rem;
+        margin: 0; } }
     .product__right-heading {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+      @media (max-width: 56.25em) {
+        .product__right-heading {
+          margin-bottom: 0.9rem; } }
       .product__right-heading-title {
         font-size: 3.8rem;
         font-weight: 100;
         color: #292929;
-        letter-spacing: -0.41px;
-        margin-bottom: 1.5rem; }
-        @media (max-width: 56.25em) {
+        letter-spacing: -0.41px; }
+        @media (max-width: 37.5em) {
           .product__right-heading-title {
-            margin-bottom: 0.9rem; } }
+            font-size: 2.1rem;
+            letter-spacing: -0.22px; } }
       .product__right-heading-price {
         font-size: 2.1rem;
         font-weight: 100;
         color: #292929;
-        letter-spacing: -0.27px;
-        text-align: right; }
+        letter-spacing: -0.27px; }
+        @media (max-width: 37.5em) {
+          .product__right-heading-price {
+            font-size: 1.6rem;
+            letter-spacing: -0.2px; } }
     .product__right-sub-heading {
       font-family: HelveticaNeue;
       font-size: 1.3rem;
@@ -152,3 +179,6 @@ margins im working with
       @media (max-width: 56.25em) {
         .product__right-sub-heading {
           margin-bottom: 4.5rem; } }
+      @media (max-width: 37.5em) {
+        .product__right-sub-heading {
+          margin-bottom: 2rem; } }
