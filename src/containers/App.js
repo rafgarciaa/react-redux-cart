@@ -1,13 +1,12 @@
 import React from 'react'
 import ProductsContainer from './ProductsContainer'
 import CartContainer from './CartContainer'
+import '../stylesheets/style.css';
 
 const App = () => (
   <div>
-    <h2>Shopping Cart Example</h2>
-    <hr/>
+    {/* <h2 className="heading-primary">Acme Store</h2> */}
     <ProductsContainer />
-    <hr/>
     <CartContainer />
   </div>
 )

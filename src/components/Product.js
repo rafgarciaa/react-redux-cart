@@ -2,8 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Product = ({ price, inventory, title }) => (
+  // product heading
   <div>
-    {title} - &#36;{price}{inventory ? ` x ${inventory}` : null}
+    <div className="product__right-heading u-margin-bottom-small">
+      <h3 className="product__right-heading-title">{title}</h3>
+      <span className="product__right-heading-price">&#36;{price}</span>
+    </div>
+    <div className="product__right-sub-heading">{inventory ? `${inventory} remaining` : `Sold Out`}</div>
   </div>
 )
 

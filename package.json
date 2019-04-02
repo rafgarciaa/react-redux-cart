@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "test": "react-scripts test",
-    "compile:sass": "node-sass assets/sass/main.scss assets/style.css -w"
+    "compile:sass": "node-sass src/stylesheets/main.scss src/stylesheets/style.css -w"
   },
   "browserslist": [
     ">0.2%",

@@ -1,0 +1,14 @@
+// Project wide font definitions
+body {
+    font-family: $font-chivo;
+    color: $color-black;
+}
+
+.heading-primary {
+    font-size: 5.1rem;
+    color: #292929;
+    letter-spacing: -1.07px;
+    line-height: 4.4rem;
+    border-bottom: 1px solid #DADADA;
+    padding-bottom: 3.4rem;
+}

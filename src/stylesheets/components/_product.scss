@@ -1,0 +1,62 @@
+.product {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 8px;   
+    display: table;
+    width: 100%;
+
+    &__left {
+        display: table-cell;
+        width: 33.33333333%;
+
+        &-1 {
+            background: url('./img/chronograph.png');
+            @include productImageStyle;
+        }
+        
+        &-2 {
+            background: url('./img/quartz.png');
+            @include productImageStyle;
+        }
+        
+        &-3 {
+            background: url('./img/weekender.png');
+            @include productImageStyle;
+        }
+    }
+
+    &__right {
+        display: table-cell;
+        width: 66.66666667%;
+        padding: 4rem 7.5rem 4rem  5.5rem;
+
+        &-heading {
+            display: flex;
+            justify-content: space-between;
+            
+            &-title {
+                font-size: 3.8rem;
+                font-weight: 100;
+                color: #292929;
+                letter-spacing: -0.41px;
+            }
+
+            &-price {
+                font-size: 2.1rem;
+                font-weight: 100;
+                color: #292929;
+                letter-spacing: -0.27px;
+                text-align: right;
+            }
+        }
+
+        &-sub-heading {
+            font-family: HelveticaNeue;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            color: #9B9B9B;
+            letter-spacing: 0;
+            margin-bottom: 10rem;
+        }
+    }
+}

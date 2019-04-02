@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 8rem;
+  background-color: #F5F5F5; }
+
+body {
+  font-family: "Chivo", sans-serif;
+  color: #000; }
+
+.heading-primary {
+  font-size: 5.1rem;
+  color: #292929;
+  letter-spacing: -1.07px;
+  line-height: 4.4rem;
+  border-bottom: 1px solid #DADADA;
+  padding-bottom: 3.4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 3rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 3.4rem !important; }
+
+/*
+margins im working with
+
+30 pixels per product
+15 pixels separating inventory to product title
+34 pixels for acme store and border
+
+*/
+.btn {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  color: #FFF;
+  background-color: #5E97D1; }
+  .btn:hover {
+    background-color: #407FC0;
+    cursor: pointer; }
+  .btn:disabled {
+    opacity: 0.3; }
+
+.product {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 8px;
+  display: table;
+  width: 100%; }
+  .product__left {
+    display: table-cell;
+    width: 33.33333333%; }
+    .product__left-1 {
+      background: url("./img/chronograph.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+    .product__left-2 {
+      background: url("./img/quartz.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+    .product__left-3 {
+      background: url("./img/weekender.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+  .product__right {
+    display: table-cell;
+    width: 66.66666667%;
+    padding: 4rem 7.5rem 4rem  5.5rem; }
+    .product__right-heading {
+      display: flex;
+      justify-content: space-between; }
+      .product__right-heading-title {
+        font-size: 3.8rem;
+        font-weight: 100;
+        color: #292929;
+        letter-spacing: -0.41px; }
+      .product__right-heading-price {
+        font-size: 2.1rem;
+        font-weight: 100;
+        color: #292929;
+        letter-spacing: -0.27px;
+        text-align: right; }
+    .product__right-sub-heading {
+      font-family: HelveticaNeue;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      color: #9B9B9B;
+      letter-spacing: 0;
+      margin-bottom: 10rem; }
