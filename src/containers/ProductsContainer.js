@@ -11,7 +11,7 @@ const ProductsContainer = ({ products, addToCart }) => (
     {products.map((product, idx) =>
       <div
         key={idx}
-        className="product u-margin-bottom-medium">
+        className="product">
 
         <div className={`product__left product__left-${product.id}`}></div>
         <ProductItem

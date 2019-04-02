@@ -4,6 +4,15 @@
     border-radius: 8px;   
     display: table;
     width: 100%;
+    overflow: hidden;
+
+    &:not(:last-child) {
+        margin-bottom: 2.8rem;
+        
+        @include respond(tablet) {
+            margin-bottom: 2.6rem;
+        }
+    }
 
     &__left {
         display: table-cell;
@@ -30,15 +39,25 @@
         width: 66.66666667%;
         padding: 4rem 7.5rem 4rem  5.5rem;
 
+        @include respond(tablet) {
+            padding: 2.7rem 3.8rem 2.8rem 3.7rem;
+        }
+
         &-heading {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             
             &-title {
                 font-size: 3.8rem;
                 font-weight: 100;
                 color: #292929;
                 letter-spacing: -0.41px;
+                margin-bottom: 1.5rem;
+
+                @include respond(tablet) {
+                    margin-bottom: 0.9rem;
+                }
             }
 
             &-price {
@@ -57,6 +76,10 @@
             color: #9B9B9B;
             letter-spacing: 0;
             margin-bottom: 10rem;
+
+            @include respond(tablet) {
+                margin-bottom: 4.5rem;
+            }
         }
     }
 }

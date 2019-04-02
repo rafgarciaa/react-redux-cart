@@ -5,3 +5,36 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
+
+/* Media Queries
+
+0 - 600:        phone
+600 - 900:      tablet-portait
+[1200 - 1800]:  desktop (regular styles)
+1800+:          big desktop
+
+(from given sketch)
+Desktop         1280 x 1135
+Tablet          768 x 958
+Phone           320 x 1313
+
+$breakpoint args:
+- phone
+- tablet
+- big-desktop
+
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) { @content }; // 600px
+    }
+
+    @if $breakpoint == tablet {
+        @media (max-width: 56.25em) { @content }; // 900px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) { @content }; // 1800px
+    }
+}

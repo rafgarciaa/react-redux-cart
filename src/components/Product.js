@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const Product = ({ price, inventory, title }) => (
   // product heading
   <div>
-    <div className="product__right-heading u-margin-bottom-small">
+    <div className="product__right-heading">
       <h3 className="product__right-heading-title">{title}</h3>
       <span className="product__right-heading-price">&#36;{price}</span>
     </div>

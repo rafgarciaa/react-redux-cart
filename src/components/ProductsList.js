@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const ProductsList = ({ title, children }) => (
   <div>
-    <h2 className="heading-primary u-margin-bottom-medium">{title}</h2>
+    <h2 className="heading-primary">{title}</h2>
     <div>{children}</div>
   </div>
 )

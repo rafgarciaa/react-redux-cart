@@ -11,4 +11,9 @@ body {
     line-height: 4.4rem;
     border-bottom: 1px solid #DADADA;
     padding-bottom: 3.4rem;
+    margin-bottom: 2.9rem;
+
+    @include respond(tablet) {
+        margin-bottom: 2.5rem;
+    }
 }
