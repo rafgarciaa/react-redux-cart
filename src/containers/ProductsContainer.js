@@ -9,16 +9,10 @@ import ProductsList from '../components/ProductsList'
 const ProductsContainer = ({ products, addToCart }) => (
   <ProductsList title="Acme Store">
     {products.map((product, idx) =>
-      <div
-        key={idx}
-        className="product">
-
-        <div className={`product__left product__left-${product.id}`}></div>
-        <ProductItem
-          key={product.id}
-          product={product}
-          onAddToCartClicked={() => addToCart(product.id)} />
-      </div> 
+      <ProductItem
+        key={product.id}
+        product={product}
+        onAddToCartClicked={() => addToCart(product.id)} />
     )}
   </ProductsList>
 )

@@ -1,10 +1,11 @@
 // Project wide font definitions
 body {
-    font-family: $font-chivo;
+    font-family: 'ChivoRegular', sans-serif;
     color: $color-black;
 }
 
 .heading-primary {
+    font-family: 'ChivoBold';
     font-size: 5.1rem;
     color: #292929;
     letter-spacing: -1.07px;
@@ -15,5 +16,7 @@ body {
 
     @include respond(tablet) {
         margin-bottom: 2.5rem;
+        font-size: 3.8rem;
+        letter-spacing: -0.8px;
     }
 }

@@ -1,14 +1,31 @@
 // FONTS
-$font-helvetica: Helvetica;
-$font-chivo: "Chivo", sans-serif;
+@font-face {
+    font-family: 'ChivoLight';
+    src: url('./fonts/Chivo-Light.ttf');
+}
+
+@font-face {
+    font-family: 'ChivoRegular';
+    src: url('./fonts/Chivo-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'ChivoBold';
+    src: url('./fonts/Chivo-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./fonts/HelveticaNeue.ttf');
+}
 
 // COLORS
-
 $color-primary: #5E97D1; // button color
 $color-primary-dark: #407FC0; // hover botton color
 
 $color-grey-light-1: #F5F5F5;
 $color-grey-light-2: #D8D8D8;
+$color-grey-light-3: #9B9B9B;
 
 $color-white: #FFF;
 $color-black: #000;

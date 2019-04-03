@@ -6,8 +6,8 @@ import '../stylesheets/style.css';
 const App = () => (
   <div>
     {/* <h2 className="heading-primary">Acme Store</h2> */}
-    <ProductsContainer />
     <CartContainer />
+    <ProductsContainer />
   </div>
 )
 

@@ -17,17 +17,25 @@ html {
         font-size: 37.5%; // 1rem = 6px; 6/16 = 37.5%
     }
 
-    @include respond(big-desktop) {
-        font-size: 75%; // 1rem = 12px; 12/16 = 75%
-    }
+    // @include respond(big-desktop) {
+    //     font-size: 75%; // 1rem = 12px; 12/16 = 75%
+    // }
 }
 
 body {
     box-sizing: border-box;
-    padding: 8rem;
+    width: 100rem;
+    margin: 0 auto;
+    margin-top: 5rem;
     background-color: $color-grey-light-1;
 
+    @include respond(tablet) {
+        margin: 0;
+        padding: 6rem;
+    }
+    
     @include respond(phone) {
-        padding: 5rem;
+        // change this to width
+        padding: 3rem;
     }
 }
