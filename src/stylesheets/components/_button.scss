@@ -11,8 +11,8 @@
     }
 
     @include respond(phone) {
-        font-size: 4rem;
-        padding: 2rem 3rem;
+        font-size: 5rem;
+        padding: 3rem 5rem;
     }
     
     &:hover {

@@ -11,12 +11,11 @@
 
     &__img {
         width: 38rem;
-        height: 25rem;
+        height: 28rem;
         object-fit: cover;
 
         @include respond(tablet) {
             width: 32rem;
-            height: 24rem;
         }
 
         @include respond(phone) {
@@ -24,6 +23,7 @@
             height: 100%;
         }
     }
+    
     
     &__column {
         width: 100%;
@@ -68,7 +68,7 @@
             }
 
             @include respond(phone) {
-                font-size: 5rem;
+                font-size: 6rem;
             }
         }
     }
@@ -87,7 +87,7 @@
         }
 
         @include respond(phone) {
-            font-size: 3.8rem;
+            font-size: 4.5rem;
         }
     }
 }

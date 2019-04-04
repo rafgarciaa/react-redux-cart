@@ -1,16 +1,100 @@
 .cart {
-    font-family: 'ChivoRegular', sans-serif;
-    font-size: 1.4rem;
+    &,
+    &:link,
+    &:visited {
+        font-family: 'ChivoRegular', sans-serif;
+        font-size: 1.4rem;
+        color: $color-grey-light-2;
+        text-decoration: none;
+        cursor: pointer;
 
-    i, h3 {
-        display: inline;
+        i, h3 {
+            display: inline;
+        }
+
+        h3 {
+            margin-left: 1rem;
+        }
+        
+        @include respond(phone) {
+            font-size: 4rem;
+        }
+    }
+}
+
+.cart-modal {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-grey-light-1, 1);
+
+    // hidden modal
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
     }
 
-    h3 {
-        margin-left: 1rem;
+    &__content {
+        @include absCenter;
+        width: 60rem;
+        height: 50rem;
+        background: $color-white;
+        box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+        border-radius: 1rem;
+        padding: 6rem;
+
+        &-heading {
+            font-size: 2.8rem;
+        }
+
+        &-img {
+            width: 6rem;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &-message {
+            @include absCenter;
+            width: 25%;
+            color: $color-grey-light-3;
+            font-size: 1.6rem;
+            text-align: center;
+            font-family: 'HelveticaNeue';
+            margin-top: 1.5rem;
+        }
+    }
+
+    &__close-button {
+        float: right;
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
     }
     
-    @include respond(phone) {
-        font-size: 4rem;
+    &__close-icon {
+        float: right;
+        // font-family: 'ChivoLight', sans-serif;
+        // font-size: 2rem;
+        width: 1px;
+        height: 2.5rem;
+        background-color: $color-grey-light-3;
+        text-decoration: none;
+        cursor: pointer;
+        
+        &-1 {
+            transform: rotate(135deg);
+        }
+
+        &-2 {
+            transform: rotate(-135deg);
+        }
     }
 }
