@@ -224,6 +224,9 @@ margins im working with
   opacity: 0;
   visibility: hidden;
   transition: all .5s; }
+  @media (max-width: 37.5em) {
+    .cart-modal {
+      background-color: #FFF; } }
   .cart-modal:target {
     opacity: 1;
     visibility: visible;
@@ -233,31 +236,61 @@ margins im working with
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60rem;
-    height: 50rem;
+    width: 70rem;
+    height: 60rem;
     background: #FFF;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
     padding: 6rem; }
+    @media (max-width: 56.25em) {
+      .cart-modal__content {
+        top: 35%;
+        width: 95%; } }
+    @media (max-width: 37.5em) {
+      .cart-modal__content {
+        top: 15%;
+        width: 100%;
+        box-shadow: none; } }
     .cart-modal__content-heading {
-      font-size: 2.8rem; }
+      font-size: 2.8rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #D8D8D8; }
+      @media (max-width: 37.5em) {
+        .cart-modal__content-heading {
+          margin-top: 8rem;
+          font-size: 10rem;
+          padding-bottom: 5rem;
+          border-bottom: 2px solid #D8D8D8; } }
     .cart-modal__content-img {
       width: 6rem;
       position: absolute;
-      top: 40%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
+      @media (max-width: 37.5em) {
+        .cart-modal__content-img {
+          top: 100%;
+          width: 20rem; } }
     .cart-modal__content-message {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      top: 60%;
       width: 25%;
       color: #9B9B9B;
       font-size: 1.6rem;
       text-align: center;
       font-family: 'HelveticaNeue';
       margin-top: 1.5rem; }
+      @media (max-width: 56.25em) {
+        .cart-modal__content-message {
+          font-size: 2.1rem; } }
+      @media (max-width: 37.5em) {
+        .cart-modal__content-message {
+          font-size: 5rem;
+          top: 130%;
+          width: 40%; } }
   .cart-modal__close-button {
     float: right;
     padding: 0.5rem 1.5rem;
@@ -269,6 +302,9 @@ margins im working with
     background-color: #9B9B9B;
     text-decoration: none;
     cursor: pointer; }
+    @media (max-width: 37.5em) {
+      .cart-modal__close-icon {
+        height: 7rem; } }
     .cart-modal__close-icon-1 {
       transform: rotate(135deg); }
     .cart-modal__close-icon-2 {

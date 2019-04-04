@@ -35,6 +35,11 @@
     visibility: hidden;
     transition: all .5s;
 
+    @include respond(phone) {
+        // position: initial;
+        background-color: $color-white;
+    }
+
     &:target {
         opacity: 1;
         visibility: visible;
@@ -43,33 +48,66 @@
 
     &__content {
         @include absCenter;
-        width: 60rem;
-        height: 50rem;
+        width: 70rem;
+        height: 60rem;
         background: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
         border-radius: 1rem;
         padding: 6rem;
 
+        @include respond(tablet) {
+            top: 35%;
+            width: 95%;
+        }
+
+        @include respond(phone) {
+            top: 15%;
+            width: 100%;
+            box-shadow: none;
+        }
+
         &-heading {
             font-size: 2.8rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #D8D8D8;
+            
+            @include respond(phone) {
+                margin-top: 8rem;
+                font-size: 10rem;
+                padding-bottom: 5rem;
+                border-bottom: 2px solid #D8D8D8;
+            }
         }
 
         &-img {
             width: 6rem;
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include absCenter;
+
+            @include respond(phone) {
+                top: 100%;
+                width: 20rem;
+            }
         }
 
         &-message {
             @include absCenter;
+            top: 60%;
             width: 25%;
             color: $color-grey-light-3;
             font-size: 1.6rem;
             text-align: center;
             font-family: 'HelveticaNeue';
             margin-top: 1.5rem;
+
+            @include respond(tablet) {
+                font-size: 2.1rem;
+            }
+
+            @include respond(phone) {
+                font-size: 5rem;
+                top: 130%;
+                width: 40%;
+            }
         }
     }
 
@@ -88,6 +126,10 @@
         background-color: $color-grey-light-3;
         text-decoration: none;
         cursor: pointer;
+
+        @include respond(phone) {
+            height: 7rem;
+        }
         
         &-1 {
             transform: rotate(135deg);
