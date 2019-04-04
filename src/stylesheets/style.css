@@ -20,7 +20,7 @@
 600 - 900:      tablet-portait
 [1200 - 1800]:  desktop (regular styles)
 1800+:          big desktop
-
+ 
 (from given sketch)
 Desktop         1280 x 1135
 Tablet          768 x 958
@@ -103,14 +103,6 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 3.4rem !important; }
 
-/*
-margins im working with
-
-30 pixels per product
-15 pixels separating inventory to product title
-34 pixels for acme store and border
-
-*/
 .btn {
   text-transform: uppercase;
   font-size: 1.4rem;

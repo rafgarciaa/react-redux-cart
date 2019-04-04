@@ -1,11 +1,5 @@
 // CSS mixins
 
-@mixin productImageStyle {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
 @mixin absCenter {
     position: absolute;
     top: 50%;
@@ -19,7 +13,7 @@
 600 - 900:      tablet-portait
 [1200 - 1800]:  desktop (regular styles)
 1800+:          big desktop
-
+ 
 (from given sketch)
 Desktop         1280 x 1135
 Tablet          768 x 958
