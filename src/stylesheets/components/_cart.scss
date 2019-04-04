@@ -1,8 +1,16 @@
 .cart {
-    float: right;
+    font-family: 'ChivoRegular', sans-serif;
+    font-size: 1.4rem;
+
+    i, h3 {
+        display: inline;
+    }
+
+    h3 {
+        margin-left: 1rem;
+    }
     
     @include respond(phone) {
-        // float: left;
-        // display: block;
+        font-size: 4rem;
     }
 }

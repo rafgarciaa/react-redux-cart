@@ -5,8 +5,10 @@ import '../stylesheets/style.css';
 
 const App = () => (
   <div>
-    {/* <h2 className="heading-primary">Acme Store</h2> */}
-    <CartContainer />
+    <div className="heading">
+      <h2 className="heading__primary">Acme Store</h2>
+      <CartContainer />
+    </div>
     <ProductsContainer />
   </div>
 )

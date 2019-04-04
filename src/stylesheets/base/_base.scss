@@ -35,7 +35,6 @@ body {
     }
     
     @include respond(phone) {
-        // change this to width
-        padding: 3rem;
+        padding: 8rem;
     }
 }

@@ -60,26 +60,39 @@ body {
       padding: 6rem; } }
   @media (max-width: 37.5em) {
     body {
-      padding: 3rem; } }
+      padding: 8rem; } }
 
 body {
   font-family: 'ChivoRegular', sans-serif;
   color: #000; }
 
-.heading-primary {
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-family: 'ChivoBold';
-  font-size: 5.1rem;
   color: #292929;
-  letter-spacing: -1.07px;
-  line-height: 4.4rem;
-  border-bottom: 1px solid #DADADA;
+  border-bottom: 1px solid #D8D8D8;
   padding-bottom: 3.4rem;
   margin-bottom: 2.9rem; }
   @media (max-width: 56.25em) {
-    .heading-primary {
+    .heading {
       margin-bottom: 2.5rem;
-      font-size: 3.8rem;
       letter-spacing: -0.8px; } }
+  @media (max-width: 37.5em) {
+    .heading {
+      display: block;
+      font-size: 5rem;
+      padding-bottom: 3.4rem;
+      margin-bottom: 2.9rem; } }
+  .heading__primary {
+    font-size: 5.1rem;
+    letter-spacing: -1.07px;
+    line-height: 4.4rem; }
+    @media (max-width: 37.5em) {
+      .heading__primary {
+        font-size: 8.1rem;
+        line-height: 10rem; } }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
@@ -110,8 +123,8 @@ margins im working with
       font-size: 1.8rem; } }
   @media (max-width: 37.5em) {
     .btn {
-      font-size: 1.2rem;
-      padding: 0.7rem 1.5rem; } }
+      font-size: 4rem;
+      padding: 2rem 3rem; } }
   .btn:hover {
     background-color: #407FC0;
     cursor: pointer; }
@@ -124,6 +137,9 @@ margins im working with
   border-radius: 0.8rem;
   width: 100%;
   display: flex; }
+  @media (max-width: 37.5em) {
+    .product {
+      flex-direction: column; } }
   .product__img {
     width: 38rem;
     height: 25rem;
@@ -132,12 +148,20 @@ margins im working with
       .product__img {
         width: 32rem;
         height: 24rem; } }
+    @media (max-width: 37.5em) {
+      .product__img {
+        width: 100%;
+        height: 100%; } }
   .product__column {
     width: 100%;
     margin: 2.5rem 3.5rem; }
     @media (max-width: 56.25em) {
       .product__column {
         margin: 3rem 4rem; } }
+    @media (max-width: 37.5em) {
+      .product__column {
+        width: initial;
+        margin: 4rem 6rem; } }
   .product__heading {
     display: flex;
     justify-content: space-between;
@@ -149,6 +173,9 @@ margins im working with
       @media (max-width: 56.25em) {
         .product__heading-title {
           font-size: 4.2rem; } }
+      @media (max-width: 37.5em) {
+        .product__heading-title {
+          font-size: 8rem; } }
     .product__heading-price {
       font-size: 2.1rem;
       font-family: 'ChivoLight', sans-serif;
@@ -156,6 +183,9 @@ margins im working with
       @media (max-width: 56.25em) {
         .product__heading-price {
           font-size: 2.5rem; } }
+      @media (max-width: 37.5em) {
+        .product__heading-price {
+          font-size: 5rem; } }
   .product__sub-heading {
     font-family: 'HelveticaNeue', sans-serif;
     font-size: 1.3rem;
@@ -167,6 +197,17 @@ margins im working with
       .product__sub-heading {
         font-size: 1.8rem;
         margin-bottom: 7rem; } }
+    @media (max-width: 37.5em) {
+      .product__sub-heading {
+        font-size: 3.8rem; } }
 
 .cart {
-  float: right; }
+  font-family: 'ChivoRegular', sans-serif;
+  font-size: 1.4rem; }
+  .cart i, .cart h3 {
+    display: inline; }
+  .cart h3 {
+    margin-left: 1rem; }
+  @media (max-width: 37.5em) {
+    .cart {
+      font-size: 4rem; } }

@@ -4,19 +4,36 @@ body {
     color: $color-black;
 }
 
-.heading-primary {
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: 'ChivoBold';
-    font-size: 5.1rem;
     color: #292929;
-    letter-spacing: -1.07px;
-    line-height: 4.4rem;
-    border-bottom: 1px solid #DADADA;
+    border-bottom: 1px solid #D8D8D8;
     padding-bottom: 3.4rem;
     margin-bottom: 2.9rem;
 
     @include respond(tablet) {
         margin-bottom: 2.5rem;
-        font-size: 3.8rem;
         letter-spacing: -0.8px;
+    }
+
+    @include respond(phone) {
+        display: block;
+        font-size: 5rem;
+        padding-bottom: 3.4rem;
+        margin-bottom: 2.9rem;
+    }
+
+    &__primary {
+        font-size: 5.1rem;
+        letter-spacing: -1.07px;
+        line-height: 4.4rem;
+
+        @include respond(phone) {
+            font-size: 8.1rem;
+            line-height: 10rem;
+        }
     }
 }

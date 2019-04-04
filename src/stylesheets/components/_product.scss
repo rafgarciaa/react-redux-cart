@@ -5,6 +5,10 @@
     width: 100%;
     display: flex;
 
+    @include respond(phone) {
+        flex-direction: column;
+    }
+
     &__img {
         width: 38rem;
         height: 25rem;
@@ -14,6 +18,11 @@
             width: 32rem;
             height: 24rem;
         }
+
+        @include respond(phone) {
+            width: 100%;
+            height: 100%;
+        }
     }
     
     &__column {
@@ -22,6 +31,11 @@
 
         @include respond(tablet) {
             margin: 3rem 4rem;
+        }
+
+        @include respond(phone) {
+            width: initial;
+            margin: 4rem 6rem;
         }
     }
     
@@ -38,6 +52,10 @@
             @include respond(tablet) {
                 font-size: 4.2rem;
             }
+
+            @include respond(phone) {
+                font-size: 8rem;
+            }
         }
 
         &-price {
@@ -47,6 +65,10 @@
 
             @include respond(tablet) {
                 font-size: 2.5rem;
+            }
+
+            @include respond(phone) {
+                font-size: 5rem;
             }
         }
     }
@@ -62,6 +84,10 @@
         @include respond(tablet) {
             font-size: 1.8rem;
             margin-bottom: 7rem;
+        }
+
+        @include respond(phone) {
+            font-size: 3.8rem;
         }
     }
 }
