@@ -1,4 +1,4 @@
-# React-Redux Shopping Cart
+# [React-Redux Shopping Cart](https://rafgarciaa.github.io/react-redux-cart/)
 This is a copy of the [Redux Shopping Cart Example](https://github.com/reactjs/redux/tree/master/examples/shopping-cart).
 
 A shopping cart component that utilizes responsive design to provide seamless user-experience to all users across all devices.
