@@ -3,21 +3,26 @@ import PropTypes from 'prop-types'
 // import Product from './Product'
 
 const Cart  = ({ products, total, onCheckoutClicked }) => {
-  // const hasProducts = products.length > 0
-  // const nodes = hasProducts ? (
-  //   products.map(product =>
-  //     <Product
-  //       title={product.title}
-  //       price={product.price}
-  //       quantity={product.quantity}
-  //       key={product.id}
-  //     />
-  //   )
-  // ) : (
-  //   <em>Please add some products to cart.</em>
-  // )
+  const cartQty = products.reduce((acc, prod) => acc + prod.quantity, 0); // adds all the quantities property in each product
+  const hasProducts = cartQty > 0
+  const nodes = hasProducts ? (
+    <div>cart products in here</div>
+  ) : (
+    <div>
+      <img className="cart-modal__content-img" src="./img/cart.png" alt="Cart Img"></img>
+      <span className="cart-modal__content-message">Please add some products to your cart.</span>
+    </div>
+  )
 
-  const cartQty = products.length;
+    //   products.map(product =>
+    //     <Product
+    //       title={product.title}
+    //       price={product.price}
+    //       quantity={product.quantity}
+    //       key={product.id}
+    //     />
+    //   )
+
   return (
     <div>
       <a href="#cart-modal" className="cart">
@@ -33,8 +38,7 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
           </a>
 
           <h3 className="cart-modal__content-heading">Your Cart</h3>
-          <img className="cart-modal__content-img" src="./img/cart.png" alt="Cart Img"></img>
-          <span className="cart-modal__content-message">Please add some products to your cart.</span>
+          { nodes }
         </div>
       </div>
     </div>
